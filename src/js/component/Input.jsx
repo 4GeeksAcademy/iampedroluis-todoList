@@ -8,7 +8,7 @@ const Input = () =>{
 
 let [listItem, setListItem] = useState([])
 
-let [modal, setModal] = useState("")
+
 
 
 
@@ -43,19 +43,27 @@ const deleteitem = (deleteel)=>{
     
 }
 
-let lista = listItem.map((el)=> <li>{el}<a className="btn btn-primary" href="#" role="button" onClick={()=>deleteitem(el)} >Link</a></li>)
+let lista = listItem.map((el)=> <div id="item"><li className="d-flex justify-content-between "><p className="mt-4 ms-4">{el}</p><a className="mt-3 pt-2" href="#" role="button" onClick={()=>deleteitem(el)} ><img src='https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg' alt="" id="poke" /></a></li><hr /></div>)
 
     return (
-        <div>{modal}
-            <h1>Todo List</h1>
-            
-            <input type="text"  onKeyDown={enter}  />
-            <ul>
+        <div>
+            <h1 >Todo</h1>
+            <div className=" container" id="conatiner-lista">
+            <div className="" id="conatiner-input">
+            <input type="text" className="mt-4" onKeyDown={enter} placeholder="Algo que anotar?"  />
+            </div>
+            <div className="" id="container-items">
+            <ul className="mt-2" id="lista">         
             {lista}
+            <hr />
             </ul>
-                <div></div>
-            <p>{listItem.length}</p>
+            
 
+            <div className="d-flex justify-content-start text-light ps-4 pt-2" id="poke-list-foot"><p>Poke-List Items </p><p id="numberlist">{listItem.length}</p></div>
+            </div>
+            
+            
+            </div>
         </div>
     )
 }
