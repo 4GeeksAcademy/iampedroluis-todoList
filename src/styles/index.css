@@ -10,3 +10,15 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+#modal{
+    
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    background-color: rgba(70, 67, 67, 0.815);
+    
+}
+#modalito{
+    height: 500px;
+    position: absolute;
+}
