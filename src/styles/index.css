@@ -82,13 +82,14 @@ ul{
 }
 
 #poke{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height:  35px;
+    margin-right: 20px;
 }
-img{
-    border-radius: 40px;
+#poke{
+    border-radius: 35px;
 }
-img:hover {
+#poke:hover {
     -webkit-box-shadow:0px 0px 105px 45px rgba(45,255,196,0.9);
     -moz-box-shadow: 0px 0px 105px 45px rgba(45,255,196,0.9);
     box-shadow: 0px 0px 105px 45px rgba(45,255,196,0.9);
@@ -122,3 +123,33 @@ img:hover {
     background-image: linear-gradient( 111.2deg,  rgba(232, 5, 5, 0.562) 1.7%, rgba(245, 49, 190, 0.39) 98.7% );
     border-radius: 40px;
  }
+
+ #pikachu{
+    width: 70px;
+    height: 50px;
+    bottom: 0%;
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 5s;
+ }
+
+ @-webkit-keyframes run {
+    0% {
+      left: 0;
+    }
+    48% {
+      -webkit-transform: rotateY(0deg); 
+    }
+    50% { 
+      left: calc(100% - 100px);
+      -webkit-transform: rotateY(180deg); 
+    }
+    98% {
+      -webkit-transform: rotateY(180deg); 
+    }
+    100% {
+      left: 0;    
+       -webkit-transform: rotateY(0deg);
+    }
+  }

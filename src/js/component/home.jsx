@@ -9,6 +9,7 @@ const Home = () => {
 	return (
 		<div className="text-center">
 			<Input></Input>
+			<img id="pikachu" src="https://media.tenor.com/fSsxftCb8w0AAAAi/pikachu-running.gif" alt="" />
 		</div>
 	);
 };

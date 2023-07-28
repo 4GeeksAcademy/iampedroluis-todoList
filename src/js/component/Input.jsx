@@ -43,7 +43,7 @@ const deleteitem = (deleteel)=>{
     
 }
 
-let lista = listItem.map((el)=> <div id="item"><li className="d-flex justify-content-between "><p className="mt-4 ms-4">{el}</p><a className="mt-3 pt-2" href="#" role="button" onClick={()=>deleteitem(el)} ><img src='https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg' alt="" id="poke" /></a></li><hr /></div>)
+let lista = listItem.map((el)=> <div id="item"><li className="d-flex justify-content-between "><p className="mt-4 ms-4">{el}</p><a className="mt-3 pt-2" href="#" role="button" onClick={()=>deleteitem(el)} ><img  src='https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg' alt="" id="poke" /></a></li><hr /></div>)
 
     return (
         <div>
@@ -64,6 +64,7 @@ let lista = listItem.map((el)=> <div id="item"><li className="d-flex justify-con
             
             
             </div>
+
         </div>
     )
 }
