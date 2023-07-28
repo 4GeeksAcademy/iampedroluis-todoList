@@ -131,7 +131,7 @@ ul{
     position: fixed;
     -webkit-animation: linear infinite;
     -webkit-animation-name: run;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 30s;
  }
 
  @-webkit-keyframes run {

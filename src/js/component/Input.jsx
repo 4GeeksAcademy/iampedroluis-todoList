@@ -47,7 +47,7 @@ let lista = listItem.map((el)=> <div id="item"><li className="d-flex justify-con
 
     return (
         <div>
-            <h1 >Todo</h1>
+            <h1 >POKE - LIST </h1>
             <div className=" container" id="conatiner-lista">
             <div className="" id="conatiner-input">
             <input type="text" className="mt-4" onKeyDown={enter} placeholder="Algo que anotar?"  />
